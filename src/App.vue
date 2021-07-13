@@ -1,20 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
   <Banner />
   <ButtonLanguage />
 </template>
 
 <script>
-import Banner from './components/Banner.vue'
-import ButtonLanguage from './components/ButtonLanguage.vue'
+  import Banner from './components/Banner.vue'
+  import ButtonLanguage from './components/ButtonLanguage.vue'
 
-export default {
-  name: 'App',
-  components: {
-    Banner,
-    ButtonLanguage
+  export default {
+    name: 'App',
+    components: {
+      Banner,
+      ButtonLanguage
+    }
   }
-}
 </script>
 
 <style>
@@ -24,6 +23,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

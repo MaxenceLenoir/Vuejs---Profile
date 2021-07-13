@@ -1,0 +1,23 @@
+$red: #d62828;
+$blue: #167ffb;
+$yellow: #f0a202;
+$orange: #f18805;
+$green: #1edd88;
+$gray: #0e0000;
+$light-gray: #f4f4f4;
+$black-cv: #0e1428;
+$darker-cv: #060b1f;
+$blue-sky-skill: #00bcd4;
+$red-skill: #d40000;
+$green-skill: #00d41c;
+$orange-skill: #d47f00;
+$pink-skill: #d400c9;
+$yellow-skill: #e2e600;
+
+.color-orange {
+  color: $orange;
+  &:hover {
+    color: $orange;
+    opacity: 0.8;
+  }
+}

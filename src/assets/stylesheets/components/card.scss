@@ -1,0 +1,295 @@
+// card fullstack
+
+.card-fullstack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $yellow;
+  i {
+    font-size: 50px;
+  }
+  .name {
+    margin-top: 5px;
+    font-size: 24px;
+  }
+}
+
+// card presentation
+
+.card-pres {
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  margin-bottom: 150px;
+  .card-pres-intro {
+    display: flex;
+    .card-pres-av {
+      width: 100px;
+      height: 100px;
+      border-radius: 10%;
+    }
+    .card-pres-desc {
+      width: calc(100% - 100px);
+    }
+  }
+  .motivation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i {
+      color: $orange;
+    }
+  }
+}
+
+// card skill css
+
+.card-skill {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  transition: 0.3s;
+  background: $darker-cv;
+  &:hover {
+    height: 140px;
+  }
+}
+
+.card-skill-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+  svg {
+    max-width: 100%;
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+}
+
+.card-skill:hover .card-skill-img svg {
+  opacity: 1;
+}
+
+.card-skill-content {
+  position: absolute;
+  bottom: 0;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  height: 30px;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
+  color: $light-gray;
+}
+
+.card-skill:hover .card-skill-content {
+  opacity: 1;
+}
+
+// card level css
+
+.card-level {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background: $darker-cv;
+  color: $light-gray;
+}
+
+// level color css
+
+.beginner::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+  background: linear-gradient(235deg, $yellow-skill, $black-cv, $yellow-skill);
+}
+
+.beginner::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(20px);
+  background: linear-gradient(235deg, $yellow-skill, $black-cv, $yellow-skill);
+}
+
+.intermediate::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+  background: linear-gradient(235deg, $orange-skill, $black-cv, $orange-skill);
+}
+
+.intermediate::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(20px);
+  background: linear-gradient(235deg, $orange-skill, $black-cv, $orange-skill);
+}
+
+.advanced::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+  background: linear-gradient(235deg, $red-skill, $black-cv, $red-skill);
+}
+
+.advanced::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(20px);
+  background: linear-gradient(235deg, $red-skill, $black-cv, $red-skill);
+}
+
+// card project css
+
+:root {
+  --card-project-image-width: 100%;
+}
+
+.card-project {
+  align-self: flex-start;
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  transition: all 300ms ease-in-out;
+  border-radius: 20px;
+  color: $light-gray;
+
+  .card-project-image {
+    width: --card-project-image-width;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  .card-project-image-hovered {
+    --card-img-hovered-overlay: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    );
+    transition: all 350ms ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    width: var(--card-project-image-width);
+    top: 0;
+    border-radius: 20px;
+  }
+
+  .card-project-content {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50%;
+    height: 100%;
+    padding: 10px;
+    right: 0;
+    transition: all 350ms ease-in-out;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 3px 5px 20px rgba($orange, 0.301),
+      3px 5px 10px rgba($orange, 0.301);
+    transform: scale(1.025);
+
+    .card-project-image-hovered {
+      --card-project-image-hovered-overlay: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.65)
+      );
+      width: 50%;
+      border-radius: 20px 0 0 20px;
+    }
+    .card-project-content {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .card-project .card-project-content {
+    max-width: 70%;
+  }
+  .card-project:hover .card-project-image-hovered {
+    width: 30%;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-motiv {
+    background-color: rgba($darker-cv, 0.5);
+    border-radius: 10px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 991px) {
+  .card-pres {
+    .card-pres-intro {
+      flex-direction: column;
+      align-items: center;
+      img {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

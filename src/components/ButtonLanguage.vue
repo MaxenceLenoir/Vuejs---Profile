@@ -1,8 +1,7 @@
 <template>  
   <div class="banner-languages">
     <div v-for="locale in locales" :key="locale" @click="switchLocale(locale)">
-      {{locale}}
-      <img alt="Vue logo" v-bind:src="require(`@/assets/${locale}.png`)" class="icon-flag">
+      <img alt="Vue logo" v-bind:src="require(`@/assets/images/${locale}.png`)" class="icon-flag">
     </div>
   </div>
 </template>
