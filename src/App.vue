@@ -1,15 +1,18 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Banner />
+  <ButtonLanguage />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Banner from './components/Banner.vue'
+import ButtonLanguage from './components/ButtonLanguage.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Banner,
+    ButtonLanguage
   }
 }
 </script>

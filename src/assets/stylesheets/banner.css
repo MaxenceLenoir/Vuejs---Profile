@@ -1,0 +1,114 @@
+.banner-curiculum {
+  height: 100vh;
+  box-sizing: border-box;
+  color: orange;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(black, 0.5),
+      rgba(black, 1)
+    ),
+    asset-url('banner.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-family: 'Averia Serif Libre';
+  opacity: 0.8;
+  text-shadow: black 0.1em 0.1em 0.1em;
+  text-align: center;
+}
+
+.banner-title {
+  font-size: 90px;
+}
+.banner-subtitle {
+  font-size: 60px;
+}
+
+#index {
+  height: 100%;
+  background: black;
+  perspective: 100000px;
+  display: flex;
+  overflow: hidden;
+}
+
+#index .loaded .matrix {
+  height: 100vh;
+}
+
+#index.loaded {
+  animation: perspective 10s;
+  animation-fill-mode: forwards;
+}
+
+.matrix {
+  height: 0;
+  max-height: calc(100%);
+  position: relative;
+  top: 0;
+  padding: 0 5px;
+  color: green;
+  text-shadow: 0 1px 2px green;
+  letter-spacing: 2px;
+  animation: growing 2.5s;
+  animation-fill-mode: forwards;
+  border-radius: 0 5px 5px 0;
+  flex: 1 0 auto;
+  white-space: nowrap;
+  writing-mode: vertical-lr;
+  overflow: hidden;
+}
+
+.banner-languages {
+  width: 140px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  right: 5px;
+  top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes perspective {
+  50% {
+    perspective: 1px;
+  }
+}
+
+@keyframes growing {
+  100% {
+    height: 100%;
+  }
+}
+
+@media (max-width: 790px) {
+  .banner-curiculum.banner-text.banner-title {
+    font-size: 56px;
+  }
+  .banner-subtitle {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 630px) {
+  .banner-curiculum.banner-text.banner-title {
+    font-size: 40px;
+  }
+  .banner-subtitle {
+    font-size: 32px;
+  }
+  .banner-languages {
+    width: 100px;
+  }
+}
