@@ -20,8 +20,9 @@ module.exports = {
       sass: {
         additionalData: `
         @import "@/assets/stylesheets/config/_colors.scss";
-        @import "@/assets/stylesheets/config/_utilities.scss";
         @import "@/assets/stylesheets/config/_fonts.scss";
+        @import "@/assets/stylesheets/config/_utilities.scss";
+        @import "@/assets/stylesheets/components/index.scss";
         `
       }
     }

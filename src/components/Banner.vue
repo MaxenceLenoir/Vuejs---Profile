@@ -22,7 +22,7 @@
         <div class="name">Web Design</div>
       </div>
     </div>
-    <a href="#" class="without-decoration color-orange scroll-down animate__animated animate__pulse animate__infinite">
+    <a href="#about" class="without-decoration color-orange scroll-down animate__animated animate__pulse animate__infinite">
       <font-awesome-icon icon="angle-double-down" size="1x"/>
     </a>
   </div>
@@ -35,9 +35,6 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '../assets/stylesheets/components/banner.scss';
-  @import '../assets/stylesheets/components/card.scss';
-  @import '../assets/stylesheets/components/container.scss';
   @import '../../node_modules/animate.css/animate.css';
 </style>
 
