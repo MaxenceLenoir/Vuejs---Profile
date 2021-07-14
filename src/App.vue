@@ -7,7 +7,6 @@
   <Game />
   <Footer />
 </template>
-
 <script>
   import Banner from './components/Banner.vue'
   import ButtonLanguage from './components/ButtonLanguage.vue'
