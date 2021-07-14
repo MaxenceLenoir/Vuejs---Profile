@@ -14,5 +14,42 @@
   "curious": "Curioso",
   "fast-learner": "Fast-learner",
   "challenges": "Esperando nuevos desafíos",
-  "game": "Pero si llegó un poco por casualidad en este site, que mi perfil no le interesa especialmente pero tienes dos minutos, le propongo un juego codificado en Javascript entonces no dude"
+  "game": "Pero si llegó un poco por casualidad en este site, que mi perfil no le interesa especialmente pero tienes dos minutos, le propongo un juego codificado en Javascript entonces no dude",
+  "projects_detail": [
+    {
+      "skill_one": "Sistema de notificación en vivo",
+      "skill_two": "Interfaz de Administración - Active Admin",
+      "skill_three": "Cálculo de puntos basado en acciones del usuario",
+      "description": "Resonances ayudo compañías para ser ágil y resistentes."
+    },
+    {
+      "skill_one": "Front React JS",
+      "skill_two": "Wizard form (Multi step)",
+      "skill_three": "Export PDF - gem Grover",
+      "description": "Plateforma web que simplifica la creación de documentos de seguridad para empresas de construcción."
+    },
+    {
+      "skill_one": "Reservacíon - Back end",
+      "skill_two": "Background Job - tareas automatizadas (mails ...)",
+      "skill_three": "Paypal pago",
+      "description": "Sitio web para um complejo hotelero tailandés."
+    },
+    {
+      "skill_one": "calculo prestación desempleo - Back-end",
+      "skill_two": "Exportación PDF - Gem wicked-pdf",
+      "skill_three": "Formulario AJAX para manejar errores",
+      "description": "Aplicación para facilitar accesso al derecho al desempleo despúes de una experiencia internacional."
+    },
+    {
+      "skill_one": "Chat en vivo - Action Cable",
+      "skill_two": "notificaciones en tiempo real - Action Cable",
+      "skill_three": "Authentification & Authorization", 
+      "description": "Aplicación para dueño de apartamento esperando oportunidades del vecindad."
+    },
+    {
+      "skill_one": "Airbnb like - Market place",
+      "skill_two": "Sistema de pago - Stripe",
+      "skill_three": "Geomapping & Geolocalization - Mapbox",
+      "description": "Market place para los aficionados de la bicicleta."
+    }]
 }
