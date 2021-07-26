@@ -47,6 +47,29 @@
   }
 }
 
+// github card
+
+.github-card {
+  display: flex;
+  padding: 10px;
+  border-radius: 20px;
+  path {
+    width: 100px;
+    height: 100px;
+  }
+  .title {
+    margin-bottom: 15px;
+  }
+  .github-stat {
+    .name {
+      font-family: "Averia Serif Libre";
+      font-size: 16px;
+    }
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 // card skill css
 
 .card-skill {
