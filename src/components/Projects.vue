@@ -4,7 +4,7 @@
   <div class="grid-projects">
     <div v-for="project in projects" :key="project">
       <div class="grid-col-projects">
-        <a href=project.url target="_blank" class="without-decoration">
+        <a :href="`${project.url}`" target="_blank" class="without-decoration">
           <div class="card-project">
             <div class="card-project-image" :style="{backgroundImage: `url('${require('../assets/images/' + project.asset_url)}')`}">
             </div>
